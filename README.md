@@ -85,7 +85,3 @@ Amos-44
 ## License
 
 This project is for educational purposes.
-
-
-
-You’re submission-ready after this. 🚀
