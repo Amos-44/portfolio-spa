@@ -17,7 +17,6 @@ function SearchBar({ searchTerm, setSearchTerm }) {
           placeholder=" Search by title, description or technologies..."
           className="pl-8 p-2 w-full border"
           aria-label="Search projects"
-          aria-label="Search projects"
         />
       </div>
     </div>
