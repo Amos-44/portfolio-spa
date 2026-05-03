@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { @apply m-0 p-0 box-border antialiased; }
+  body {
+    @apply bg-white min-h-screen font-sans text-gray-900;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-white border border-gray-300 rounded-lg;
+  }
+  
+  .btn-primary {
+    @apply px-4 py-2 border border-gray-800 rounded bg-gray-800 text-white
+           hover:bg-gray-700 transition-colors;
+  }
+  
+  .btn-secondary {
+    @apply px-4 py-2 border border-gray-300 rounded text-gray-700 
+           hover:bg-gray-50 transition-colors flex items-center gap-2;
+  }
+  
+ .input-field {
+    @apply w-full px-4 py-2 border border-gray-300 rounded
+           focus:border-gray-500 focus:outline-none
+           placeholder-gray-400 transition-all;
+  }
+  
+  /* container for project cards */
+  .project-card {
+    @apply p-4 border border-gray-200 rounded-lg bg-white;
+  }
+}
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.3s ease-out forwards;
+  }
+
+  @keyframes slideUp {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
